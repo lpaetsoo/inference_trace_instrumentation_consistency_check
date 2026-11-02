@@ -1,11 +1,11 @@
-# mmeval_jd151
+# inference_trace_instrumentation_consistency_check
 
 **找出多模态评测工程师·推理链路的追踪埋点里互相矛盾的两处并排列出。**
 
-`mmeval_jd151` —— 在同一个输入里两两比对，检测多模态评测工程师·推理链路的追踪埋点相关的矛盾表述，把冲突双方原样并排呈现
+`inference_trace_instrumentation_consistency_check` —— 在同一个输入里两两比对，检测多模态评测工程师·推理链路的追踪埋点相关的矛盾表述，把冲突双方原样并排呈现
 
 - 零依赖，Python 3.10+ 标准库即可运行
-- 单文件，`mmeval_jd151.py` 拷走就能用
+- 单文件，`inference_trace_instrumentation_consistency_check.py` 拷走就能用
 - 不联网、不写文件
 
 ## 对应的岗位
@@ -23,16 +23,16 @@
 零依赖，Python 3.10+ 即可：
 
 ```bash
-pip install lpaetsoo-mmeval_jd151
+pip install lpaetsoo-inference_trace_instrumentation_consistency_check
 ```
 
 装完直接用命令名调用：
 
 ```bash
-mmeval_jd151 --help
+inference_trace_instrumentation_consistency_check --help
 ```
 
-也可以不用安装，直接把 `mmeval_jd151.py` 拷走用——它只依赖标准库。
+也可以不用安装，直接把 `inference_trace_instrumentation_consistency_check.py` 拷走用——它只依赖标准库。
 
 ## 为什么需要它
 
@@ -47,9 +47,9 @@ mmeval_jd151 --help
 ## 用法
 
 ```bash
-python mmeval_jd151.py --file input.txt
-python mmeval_jd151.py --text "示例内容"
-python mmeval_jd151.py --file input.txt --json
+python inference_trace_instrumentation_consistency_check.py --file input.txt
+python inference_trace_instrumentation_consistency_check.py --text "示例内容"
+python inference_trace_instrumentation_consistency_check.py --file input.txt --json
 ```
 
 加 `--json` 可以拿到机器可读的结果，便于接到流水线里。
@@ -62,7 +62,7 @@ python mmeval_jd151.py --file input.txt --json
 ## 跑测试
 
 ```bash
-python test_mmeval_jd151.py
+python test_inference_trace_instrumentation_consistency_check.py
 ```
 
 测试用独立的断言与临时数据，不污染工作目录。
@@ -70,7 +70,7 @@ python test_mmeval_jd151.py
 ## 来源与参考
 
 - Python 标准库文档：<https://docs.python.org/3/>
-- GitHub 仓库：<https://github.com/lpaetsoo/mmeval_jd151>
+- GitHub 仓库：<https://github.com/lpaetsoo/inference_trace_instrumentation_consistency_check>
 
 ---
 
@@ -79,7 +79,7 @@ python test_mmeval_jd151.py
 lpaetsoo 做多模态评测工程师·推理链路的追踪埋点相关的问题，方向对标阶跃星辰的资深多模态评测工程师岗位。这个工具先替你回答一个具体问题，再谈别的。
 
 - 个人主页：<https://lpaetsoo.github.io>
-- 仓库：<https://github.com/lpaetsoo/mmeval_jd151>
+- 仓库：<https://github.com/lpaetsoo/inference_trace_instrumentation_consistency_check>
 
 ## 许可
 
